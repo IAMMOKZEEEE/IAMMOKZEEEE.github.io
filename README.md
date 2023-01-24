@@ -9,4 +9,4 @@ My self-coded website portfolio to showcase my coding skills.
 ## How to Use
 
 ## Features
-
++ JavaScript Count-Up clock for how long I've been coding.
