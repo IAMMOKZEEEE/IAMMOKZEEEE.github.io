@@ -10,3 +10,5 @@ My self-coded website portfolio to showcase my coding skills.
 
 ## Features
 + JavaScript Count-Up clock for how long I've been coding.
++ Dropdown menu to access 5 listed active projects pages.
++ Archive of previous projects.
