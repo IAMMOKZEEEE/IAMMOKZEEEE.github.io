@@ -9,6 +9,12 @@ iammokzeeee.github.io, is a website to showcase all my coding projects, past and
 
 You will also find an archive of my previous works, including useable demonstrations of the products I have coded. Also, the site has a contact page, should anyone wish to contact me directly.
 
+Each body of work, where possible (some projects provided are private for corporate use), provides an explanation of what skills the projects demonstrate, what what the overall objective of the project was, a useable demonstration of the product and the code used to achieve the result.
+
+Where it's not possible to provide all of the above information, outlines of the projects intention, aims and a broad overview of how the aim was/will be achieved, is provided.
+
+A blog provides regular, but casual, updates from Charlie about his life and relevant coding-related topics.
+
 ## How to Use
 
 ### Homepage (index)
