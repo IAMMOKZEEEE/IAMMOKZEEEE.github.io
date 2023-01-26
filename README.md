@@ -2,7 +2,7 @@
 
 My self-coded website portfolio to showcase my coding projects.
 
-Currently in production, but Updates will be coming in the near future.
+Currently in production, but updates will be coming in the near future.
 
 ## Description
 iammokzeeee.github.io, is a website to showcase all my coding projects, past and present, for professional consideration by prospective employers. On this site, you will find information about myself, Charlie Marshall and information pertaining to the projects which I am currently working on.
