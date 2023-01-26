@@ -8,6 +8,19 @@ My self-coded website portfolio to showcase my coding skills.
 
 ## How to Use
 
+### Homepage (index)
+### About Me
+### About This Site
+### Current Projects
+#### Message Generator
+#### Magic 8-Ball
+#### Rock, Paper, Scissors
+#### Whale Talk
+#### MusicMailer
+### Archive
+### Blog
+### Contact
+
 ## Features
 + JavaScript Count-Up clock for how long I've been coding.
 + Dropdown menu to access 5 listed active projects pages.
