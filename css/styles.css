@@ -15,6 +15,7 @@ body{
   margin: 0px;
   width: 100%;
   padding: 0px;
+  background-color: #393d3f;
 }
 
 h1 {
@@ -34,14 +35,20 @@ button:hover{
 }
 
 /* Navigation */
+
+header{
+  width: 100%;
+}
+
 #navbar {
   padding-top: 35px;
   margin: auto;
-  width: 100%;
+  width: 800px;
   display: flex;
   padding-bottom: 100px;
   align-items: baseline;
   justify-content: space-around;
+  border: solid;
 }
 
   #nav {
@@ -69,8 +76,6 @@ button:hover{
       flex-wrap: nowrap;
       padding-left: 50px;
       align-items: center;
-      width: fit-content;
-      justify-self: space-evenly;
     }
 
       /* Navigation Items */
@@ -79,7 +84,6 @@ button:hover{
           font-family: Arial, Helvetica, sans-serif;
           color: black;
           font-size: 20px;
-          display: inline-block;
           position: relative;
           padding: 20px 0px;
           margin: 0px 20px;
@@ -154,34 +158,50 @@ button:hover{
 
 /* Hero */
 #timer-block{
-  display: flex;
+  display: block;
   width:inherit;
-  background-image: url(../images/code.jpeg);
-  background-size: cover;
   margin-top: 35px;
   height: 500px;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-  /* Cover for Hero Image */
-  #hero-cover{
-    background-color: rgba(0,0,0,0.6);
-    height: 100%;
-    padding: 0%;
-    margin: 0px;
-    width: 100%;
+  .hero-text{
+    margin: auto;
+    display: flex;
+    width: 53%;
+    justify-self: flex-start;
+    flex-wrap: wrap;
   }
-
-    /* Timer */
-    .timer{
-      display: block;
-      width: 50%;
-      font-family: helvetica;
+    #hi {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #80ffdb;
       font-size: 40px;
-      justify-content: space-evenly;
-      color: white;
-      position: relative;
-      top: 25%;
-      margin: auto;
-      width: 800px;
     }
+
+    #charlie {
+      font-family: 'Rubik Mono One', serif;
+      font-weight: 20;
+      color: #F72585;
+      font-size: 120px;
+    }
+
+    #coding {
+      color: #4895EF;
+    }
+
+  /* Timer */
+  #timer{
+    display: flex;
+    width: 50%;
+    font-family: helvetica;
+    font-size: 40px;
+    justify-content: space-evenly;
+    color: #4895EF;
+    position: relative;
+    top: 10px;
+    margin: auto;
+    width: 800px;
+    border: solid;
+  }
 
