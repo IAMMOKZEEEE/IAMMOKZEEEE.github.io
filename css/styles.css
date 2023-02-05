@@ -1,10 +1,5 @@
 /* Universal Styles */ 
 
-:root{
-  display: block;
-  width: 100%
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -15,11 +10,7 @@ body{
   margin: 0px;
   width: 100%;
   padding: 0px;
-  background-color: #F0F9FA;
-}
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 button{
@@ -34,56 +25,45 @@ button:hover{
     cursor:pointer;
 }
 
-/* Navigation */
-
-header{
-  width: 80vw;
-  height: 80vh;
-  margin: auto;
-  background-color: #27B7C7;
-  align-items: center;
-
+a{
+  font-family: 'Open Sans', sans-serif;
+  color: #e02d3f;
 }
 
 /* Homepage */
 
-/* Hero */
-#timer-block{
-  display: block;
-  width:inherit;
-  margin-top: 35px;
-  height: 500px;
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-items: start;
-  padding: 0%;
+header{
+width: 100%;
+height: 100%;
 }
-  .hero-text{
-    display: flex;
-    justify-self: flex-start;
-    /*justify-items: flex-start;*/
-    flex-wrap: wrap;
-  }
+
+#centraliser{
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+#timer-block{
+  background-image: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+}
     #hi {
       font-family: 'Open Sans', sans-serif;
-      color: #FAC59D;
+      color: #e02d3f;
       font-weight: 300;
       font-size: 40px;
     }
 
     #charlie {
-      display: flex;
-      justify-self: flex-start;
       font-family: 'Ubuntu', sans-serif;
       font-weight: 800;
-      color: #f9f9f9;
+      color: #e02d3f;
       font-size: 150px;
       width: 100%;
     }
 
     #coding {
-      color: #FAC59D;
+      color: #e02d3f;
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 40px;
@@ -91,15 +71,32 @@ header{
 
   /* Timer */
   #timer{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     font-weight: 300;
-    color: #F0F9FA;
-    top: 10px;
-    margin: auto;
-    width: 800px;
+    color: #e02d3f;
   }
 
+#down-arrow {
+  height: 50px;
+  width: 50px;
+  bottom: 15%;
+  left: 16.1%;
+  transform: translate(50%, 50%);
+}
+
+#nav-container {
+  background-color: #84fab0;
+}
+
+.nav-img {
+  width: 35px;
+}
+
+#social-links {
+  padding-top: 30px;
+  margin: auto;
+  display:inline-flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
