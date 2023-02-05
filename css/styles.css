@@ -15,18 +15,18 @@ body{
   margin: 0px;
   width: 100%;
   padding: 0px;
-  background-color: #393d3f;
+  background-color: #F0F9FA;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 button{
   border: none;
-  background-color: white;
-  color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #27B7C7;
+  color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
   font-size: 20px;
 }
 
@@ -37,122 +37,13 @@ button:hover{
 /* Navigation */
 
 header{
-  width: 100%;
-}
-
-#navbar {
-  padding-top: 35px;
+  width: 80vw;
+  height: 80vh;
   margin: auto;
-  width: 800px;
-  display: flex;
-  padding-bottom: 100px;
-  align-items: baseline;
-  justify-content: space-around;
-  border: solid;
+  background-color: #27B7C7;
+  align-items: center;
+
 }
-
-  #nav {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    width: fit-content;
-  }
-
-    #nav a{
-      float: left;
-    }
-
-    #nav a h1{
-      font-size: 16px;
-      color: black;
-    }
-    
-    #logo:hover{
-      cursor: pointer;
-    }
-
-    #nav-items-container{
-      display: flex;
-      flex-wrap: nowrap;
-      padding-left: 50px;
-      align-items: center;
-    }
-
-      /* Navigation Items */
-      .nav-i {
-          text-decoration: none;
-          font-family: Arial, Helvetica, sans-serif;
-          color: black;
-          font-size: 20px;
-          position: relative;
-          padding: 20px 0px;
-          margin: 0px 20px;
-      }
-
-        .nav-i:hover{
-            cursor: pointer;
-        }
-
-        .nav-i::before {
-          transition: 300ms;
-          height: 5px;
-          content: "";
-          position: absolute;
-          background-color: black;
-        }
-
-        .nav-animate::before {
-          width: 0%;
-          bottom: 10px;
-        }
-
-        .nav-animate:hover::before {
-          width: 100%;
-        }
-
-      /* The dropdown container in Nav Bar */
-      .dropdown {
-        float: left;
-        overflow: hidden;
-      }
-
-        .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit; /* Important for vertical align on mobile phones */
-        margin: 0; /* Important for vertical align on mobile phones */
-        }
-
-        .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        }
-
-        .dropdown-content a {
-          float: none;
-          color: black;
-          padding: 10px 16px;
-          text-decoration: none;
-          display: block;
-          text-align: left;
-          font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .dropdown-content a:hover {
-          background-color: #ddd;
-        }
-
-        .dropdown:hover .dropdown-content {
-          display: block;
-        }
 
 /* Homepage */
 
@@ -162,46 +53,53 @@ header{
   width:inherit;
   margin-top: 35px;
   height: 500px;
-  width: 100%;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
+  justify-items: start;
+  padding: 0%;
 }
   .hero-text{
-    margin: auto;
     display: flex;
-    width: 53%;
     justify-self: flex-start;
+    /*justify-items: flex-start;*/
     flex-wrap: wrap;
   }
     #hi {
-      font-family: Arial, Helvetica, sans-serif;
-      color: #80ffdb;
+      font-family: 'Open Sans', sans-serif;
+      color: #FAC59D;
+      font-weight: 300;
       font-size: 40px;
     }
 
     #charlie {
-      font-family: 'Rubik Mono One', serif;
-      font-weight: 20;
-      color: #F72585;
-      font-size: 120px;
+      display: flex;
+      justify-self: flex-start;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: 800;
+      color: #f9f9f9;
+      font-size: 150px;
+      width: 100%;
     }
 
     #coding {
-      color: #4895EF;
+      color: #FAC59D;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 40px;
     }
 
   /* Timer */
   #timer{
     display: flex;
+    justify-content: space-between;
     width: 50%;
-    font-family: helvetica;
+    font-family: 'Open Sans', sans-serif;
     font-size: 40px;
-    justify-content: space-evenly;
-    color: #4895EF;
-    position: relative;
+    font-weight: 300;
+    color: #F0F9FA;
     top: 10px;
     margin: auto;
     width: 800px;
-    border: solid;
   }
 
