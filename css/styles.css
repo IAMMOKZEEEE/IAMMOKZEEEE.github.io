@@ -10,14 +10,18 @@ body{
   margin: 0px;
   width: 100%;
   padding: 0px;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-color: #F0F9FA;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
 }
 
 button{
   border: none;
-  background-color: #27B7C7;
-  color: #f9f9f9;
-  font-family: 'Open Sans', sans-serif;
+  background-color: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
 }
 
@@ -25,9 +29,15 @@ button:hover{
     cursor:pointer;
 }
 
-a{
-  font-family: 'Open Sans', sans-serif;
-  color: #e02d3f;
+/* Navigation */
+
+header{
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  background-color: #27B7C7;
+  align-items: center;
+
 }
 
 /* Homepage */
@@ -45,25 +55,41 @@ height: 100%;
 }
 
 #timer-block{
-  background-image: linear-gradient(90deg, #84fab0 0%, #8fd3f4 100%);
+  display: block;
+  width:inherit;
+  margin-top: 35px;
+  height: 500px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: start;
+  padding: 0%;
 }
+  .hero-text{
+    display: flex;
+    justify-self: flex-start;
+    /*justify-items: flex-start;*/
+    flex-wrap: wrap;
+  }
     #hi {
       font-family: 'Open Sans', sans-serif;
-      color: #e02d3f;
+      color: #FAC59D;
       font-weight: 300;
       font-size: 40px;
     }
 
     #charlie {
+      display: flex;
+      justify-self: flex-start;
       font-family: 'Ubuntu', sans-serif;
       font-weight: 800;
-      color: #e02d3f;
+      color: #f9f9f9;
       font-size: 150px;
       width: 100%;
     }
 
     #coding {
-      color: #e02d3f;
+      color: #FAC59D;
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
       font-size: 40px;
@@ -71,10 +97,16 @@ height: 100%;
 
   /* Timer */
   #timer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
     font-family: 'Open Sans', sans-serif;
     font-size: 40px;
     font-weight: 300;
-    color: #e02d3f;
+    color: #F0F9FA;
+    top: 10px;
+    margin: auto;
+    width: 800px;
   }
 
 #down-arrow {
