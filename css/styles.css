@@ -30,6 +30,10 @@ button:hover{
   cursor: pointer;
 }
 
+.flex-container {
+  display: flex;
+}
+
 /* Homepage */
 header{
   width: 100%;
@@ -42,9 +46,11 @@ header{
 .container-fluid {
   margin: 0;
   display: flex;
-  height: 100%;
+  height: 100vh;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 #timer-block{
@@ -81,7 +87,7 @@ header{
 /* Timer */
 #timer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   font-weight: 300;
@@ -96,16 +102,12 @@ header{
   transform: translate(50%, 50%);
 }
 
-#nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #84fab0;
-}
-
 .nav-i {
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #F63134;
 }
 
 .nav-img {
@@ -116,6 +118,32 @@ header{
   padding-top: 30px;
   margin: auto;
   display:inline-flex;
+  align-items: bottom;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.social-link {
+  width: 40px;
+}
+
+#nav-container {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #84fab0;
+}
+
+nav {
+  margin: 15px;
+}
+
+#down-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 25%;
+  left: 24%;
+  transform: translate(50%, 50%);
 }
