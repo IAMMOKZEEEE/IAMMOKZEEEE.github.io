@@ -1,22 +1,97 @@
-/* Universal Styles */ 
+/* 
+
+Universal Styles 
+
+*/ 
 
 * {
   margin: 0;
   padding: 0;
 }
 
+@keyframes bob{
+  50% {bottom: 13%};
+  100% {bottom: 15%};
+}
+
+/* 
+
+Containers 
+
+*/
+
 body{
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0px;
-  width: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
   padding: 0px;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
+section{
+  display: flexbox;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  height: fit-content;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.title {
+  display: flex;
+  align-self: flex-start;
+  width: 100%;
+  justify-content: center;
+  z-index: 1;
+  position: absolute;
+}
+
+.container-fluid {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  max-height: fit-content;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.text-img-container {
+  display: grid;
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+
+.grid-container {
+  padding: 10px;
+}
+
+/* 
+
+Text 
+
+*/
+
 h1 {
   color: #F63134;
+  font-size: 50px;
   font-family: 'Ubuntu', sans-serif;
 }
+
+p{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+/* Elements */
 
 button{
   border: none;
@@ -34,17 +109,8 @@ button:hover{
 header{
   width: 100%;
   height: 100%;
-  margin: auto;
   padding: 0;
   margin: 0;
-}
-
-.container-fluid {
-  margin: 0;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
 }
 
 #timer-block{
@@ -81,7 +147,7 @@ header{
 /* Timer */
 #timer{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   font-weight: 300;
@@ -96,16 +162,12 @@ header{
   transform: translate(50%, 50%);
 }
 
-#nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #84fab0;
-}
-
 .nav-i {
   display: block;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #F63134;
 }
 
 .nav-img {
@@ -116,6 +178,92 @@ header{
   padding-top: 30px;
   margin: auto;
   display:inline-flex;
+  align-items: bottom;
   width: 100%;
   justify-content: space-evenly;
+}
+
+.social-link {
+  width: 40px;
+}
+
+#nav-container {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #84fab0;
+  animation-name: bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+nav {
+  margin: 15px;
+}
+
+#down-arrow {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  bottom: 22%;
+  left: 24%;
+  transform: translate(50%, 50%);
+  animation-name: bob;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+
+/*
+
+ABOUT ME
+
+*/
+
+#aboutme {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#me {
+  width: 500px;
+  object-fit: contain;
+}
+
+#homebrew {
+  width: 500px;
+  object-fit: contain;
+}
+
+#aboutme-grid {
+  margin-top: 130px;
+  grid-template-areas: "txt1 img1"
+                       "txt2 img2";
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+  padding: 20px;
+  width: 60vw;
+}
+
+.aboutme-txt1 {
+  grid-area: "txt1";
+  display: flex;
+}
+
+#aboutme-img1 {
+  grid-area: "img1";
+  display: flex;
+}
+
+.aboutme-txt2 {
+  grid-area: "txt2";
+  display: flex;
+}
+
+#aboutme-img2 {
+  grid-area: "img2";
+  display: flex;
 }
