@@ -1,112 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Charlie Marshall</title>
-        <link href="css/styles.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-        <script src="script/script.js"></script>
-        <script type="text/javascript">window.alert("Please note, this website is currently under construction.");</script>
-    </head>
-    <body>
-        <header>
-            <!--Container to flex header-->
-            <div class="container-fluid">
-                <div class="flex-container">
-                    <!--Side Bar-->
-                    <div id="nav-container">
-                        <nav id="nav">
-                            <a class="nav-i" href="#aboutme">About Me</a>
-                            <a class="nav-i" href="aboutthissite.html">About This Site</a>
-                            <a class="nav-i" href="#">Current Projects</button>
-                            <a class="nav-i" href="archive.html">Archive</a>
-                            <a class="nav-i" href="blog.html">Blog</a>
-                            <a class="nav-i" href="contact.html">Contact</a>
-                        </nav>
-                        <div class="flex-container" id="social-links">
-                            <a href="https://www.linkedin.com/in/charliemarshall19961/"><img class="social-link" src="images/linkedin.png"></a>
-                            <a href="https://github.com/IAMMOKZEEEE"><img class="social-link" src="images/github.png"></a>
-                        </div>
-                    </div>
-                    <!--Main Header Text-->
-                    <div id="timer-block">
-                        <div>
-                            <h1 id="hi">Hi, I'm</h1>
-                            <h1 id="charlie">CHARLIE!</h1>
-                            <h1 id="coding">I've been coding for:</h1>
-                        </div>
-                        <!--Timer-->
-                        <div id="timer">
-                            <span class="timeel days">00</span>
-                            <span class="timeel timeRefDays">days</span>
-                            <span class="timeel hours">00</span>
-                            <span class="timeel timeRefHours">hours</span>
-                            <span class="timeel minutes">00</span>
-                            <span class="timeel timeRefMinutes">minutes</span>
-                            <span class="timeel seconds">00</span>
-                            <span class="timeel timeRefSeconds">seconds</span>
-                        </div>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- FONTS -->
+    
+    <!-- FEEDEX -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="FeedEk.min.js"></script>
+    <!-- FEEDEX -->
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="script/script.js"></script>
+    <title>Charlie Marshall</title>
+</head>
+<body>
+    <header id="header">
+        <button href="#sidebar" data-bs-toggle="offcanvas" role="button" aria-contols="sidebar" id="menu-btn" class="btn ms-auto mt-3">
+            <img src="images/menu.png" id="menu-img">
+        </button>
+        <!-- TIMER -->
+        <div class="container d-flex" id="header-container">
+            <div class="row" id="header-row">
+                <div class="col" id="timer">
+                    <p class="header-txt">Hi, I'm</p>
+                    <h1 id="charlie">CHARLIE.</h1>
+                    <p class="header-txt">I've been coding for:</p>
+                    <span>
+                        <span class="timeel days header-txt">00</span>
+                        <span class="timeel timeRefDays header-txt">days</span>
+                        <span class="timeel hours header-txt">00</span>
+                        <span class="timeel timeRefHours header-txt">hours</span>
+                        <span class="timeel minutes header-txt">00</span>
+                        <span class="timeel timeRefMinutes header-txt">minutes</span>
+                        <span class="timeel seconds header-txt">00</span>
+                        <span class="timeel timeRefSeconds header-txt">seconds</span>
+                    </span>
                 </div>
-                <img id="down-arrow" src="images/down-arrow.png">
             </div>
-        </header>          
-        <main>
+        </div>
+        <!-- END TIMER -->
 
-            <section id="aboutme">
-                <div class="container-fluid">
-                    <div class="title">
-                        <h1>About Me</h1>
+        <!-- ARROW -->
+        <img id="down-arrow" src="images/down-arrow-white.png">
+        <!-- END ARROW -->
+
+        <!-- SIDEBAR BUTTON
+        <a href="#sidebar" class="d-block mt-3 btn ms-auto" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar" id="menu-btn">
+            
+        </a>
+        END SIDEBAR BUTTON-->
+
+
+    </header>
+
+    <main>
+        <!-- ABOUT ME -->
+        <section id="aboutme">
+            <div class="container-fluid d-flex" id="aboutme-cont">
+                <span class="title"><h2 class="purple">A Peek into My World</h2></span>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="aboutme-txt1">Hi! I'm Charlie, a developer working with <i>Python</i>, <i>HTML5</i>, <i>CSS</i> and <i>JavaScript</i>. While my experience with these languages has been brief, my learning curve has been extensive.</p>
+                        <br>
+                        <p>I have a passion for developing clean, efficient and effective solutions that solve real-world problems. My expertise in Python and front-end technologies has allowed me to work on a variety of projects.</p>
+                        <br>
+                        <p>In addition to my technical skills, I am also a strong communicator and a quick learner. I believe in collaborating with others to produce the best possible results and I am always looking for opportunities to expand my knowledge and grow as a developer.</p>
+                        <br>
+                        <p>I am excited to continue honing my skills and using my knowledge to make a positive impact in the world of technology. If you're looking for a driven and dedicated developer, look no further! Let's work together to bring your next project to life.</p>
                     </div>
-
-                    <div class="text-img-container" id="aboutme-grid">
-                        <div class="grid-container" id="aboutme-txt1">
-                            <p class="aboutme-txt1">Hi! I'm Charlie, a developer working with Python, HTML5, CSS and Javascript. While my experience with these languages has been brief, my learning curve has been extensive.</p>
-                            <br>
-                            <p>I have a passion for developing clean, efficient and effective solutions that solve real-world problems. My expertise in Python and front-end technologies has allowed me to work on a variety of projects.</p>
-                            <br>
-                            <p>In addition to my technical skills, I am also a strong communicator and a quick learner. I believe in collaborating with others to produce the best possible results and I am always looking for opportunities to expand my knowledge and grow as a developer.</p>
-                            <br>
-                            <p>I am excited to continue honing my skills and using my knowledge to make a positive impact in the world of technology. If you're looking for a driven and dedicated developer, look no further! Let's work together to bring your next project to life.</p>
-                        </div>
-                        <img id="me" src="images/me.jpeg" id="aboutme-img1">
-                        <img id="homebrew" src="images/home-brew.jpeg" id="aboutme-img2">
-                        <div class="grid-container" id="aboutme-txt2">
-                            <p>When I'm not coding, you can find me pursuing my various hobbies and interests. I am an avid home brewer and enjoy experimenting with different flavors and ingredients to create unique and delicious beers.</p>
-                            <br>
-                            <p>I also love playing video games and competing with friends. I find it to be a great way to unwind and relax after a long day at work.</p>
-                            <br>
-                            <p>Another one of my favorite activities is playing pool. I find it to be a great mix of strategy and physical skill, and I enjoy the challenge of trying to improve my game.</p>
-                            <br>
-                            <p>Finally, I have a passion for making electronic music under the alias 'mok_z'. I find it to be a great creative outlet, and I love the process of taking sounds and turning them into something truly special.</p>
-                            <br>
-                            <p>Whether I'm brewing beer, playing video games, shooting pool, or making music, I always find a way to bring my passions into my everyday life."</p>
-                        </div>
+                    <div class="col-6 grid-img" id="me">
+                        <img src="images/me.jpeg" id="aboutme-img1">
                     </div>
                 </div>
-            </section>
-            <section id="aboutthissite">
+                <div class="row">
+                    <div class="col-6 grid-img" id="homebrew">
+                        <img src="images/home-brew.jpeg" id="aboutme-img2">
+                    </div>
+                    <div class="col-6">
+                        <p>When I'm not coding, you can find me pursuing my various hobbies and interests. I am an avid home brewer and enjoy experimenting with different flavors and ingredients to create unique and delicious beers.</p>
+                        <br>
+                        <p>I also love playing video games and competing with friends. I find it to be a great way to unwind and relax after a long day at work.</p>
+                        <br>
+                        <p>Another one of my favorite activities is playing pool. I find it to be a great mix of strategy and physical skill, and I enjoy the challenge of trying to improve my game.</p>
+                        <br>
+                        <p>Finally, I have a passion for making electronic music under the alias 'mok_z'. I find it to be a great creative outlet, and I love the process of taking sounds and turning them into something truly special.</p>
+                        <br>
+                        <p>Whether I'm brewing beer, playing video games, shooting pool, or making music, I always find a way to bring my passions into my everyday life."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END ABOUT ME-->
 
-            </section>
-            <section id="currentprojects">
+        <!-- CURRENT PROJECTS -->
+        <section id="current-projects" class="purpleBg">
+            <div class="container-fluid d-flex" id="currentprojects-container">
+                <span class="title"><h2 class="white">What I'm Working On</h2></span>
+                <span class="title"><p class="white">My ongoing coding projects and a glimpse into my current creative endeavors.</p></span>
+                <span>
+                    <!-- PROJECT 1 -->
+                    <div class="row" id="currentprojects-row">
+                            <div class="col-2">
+                                <div class="card">
+                                    <img class="card-img-top" src="images/findArtists.jpeg">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Find Artists</h3>
+                                        <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
+                                        <a href="#" class="btn btn-primary">Find Out More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- END PROJECT 1 -->
+                        
+                        <!-- PROJECT 2 -->
+                        <div class="col-2">
+                            <div class="card">
+                                <img class="card-img-top" src="images/findArtists.jpeg">
+                                <div class="card-body">
+                                    <h3 class="card-title">Find Artists</h3>
+                                    <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
+                                    <a href="#" class="btn btn-primary">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROJECT 2 -->
 
-            </section>
-            <section id="archive">
+                        <!-- PROJECT 3 -->
+                        <div class="col-2">
+                            <div class="card">
+                                <img class="card-img-top" src="images/findArtists.jpeg">
+                                <div class="card-body">
+                                    <h3 class="card-title">Find Artists</h3>
+                                    <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
+                                    <a href="#" class="btn btn-primary">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROJECT 3-->
 
-            </section>
-            <section id="blog">
+                        <!-- PROJECT 4-->
+                        <div class="col-2">
+                            <div class="card">
+                                <img class="card-img-top" src="images/findArtists.jpeg">
+                                <div class="card-body">
+                                    <h3 class="card-title">Find Artists</h3>
+                                    <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
+                                    <a href="#" class="btn btn-primary">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROJECT 4-->
 
-            </section>
-            <section id="contact">
+                        <!-- PROJECT 5-->
+                        <div class="col-2">
+                            <div class="card">
+                                <img class="card-img-top" src="images/findArtists.jpeg">
+                                <div class="card-body">
+                                    <h3 class="card-title">Find Artists</h3>
+                                    <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
+                                    <a href="#" class="btn btn-primary">Find Out More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END PROJECT 5-->
+                    </div>
+                </span>
+            </div>
+        </section>
+        <!--END CURRENT PROJECTS-->
 
-            </section>
-        </main>
-        <footer>
+        <!-- ARCHIVE -->
+        <section id="archive">
+            <div class="container-fluid d-flex">
+                <span class="title"><h2 class="purple">The Time Capsule</h2></span>
+                <span class="title"><p class="purple">A collection of my past <i>coding projects</i> offering an insight into my coding journey, showcasing the progression of my skills as a <i>developer</i>.</p></span>
+            </div>
+        </section>
+        <!-- END ARCHIVE -->
+        
+        <!-- BLOG -->
+        <section id="blog" class="purpleBg">
+            <span class="title"><h2 class="white">Byte-Sized Insights</h2></span>
+            <span class="title"><p class="white">Join me on a fun and exciting coding journey as I showcase my latest projects and discoveries, giving you an inside look at my personal coding world as a one-person coding machine!</p></span>
+            <div class="container-fluid d-flex">
+                <div id="divFeed">
 
-        </footer>
-    </body>
+                </div>
+            </div>
+        </section>
+        <!-- END BLOG -->
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <span class="title"><h2 class="purple">Byte Buddy</h2></span>
+            <span class="title"><p class="purple">Whether you have a question or just want to chat, Byte Buddy is here to help! Drop me a line and let's connect.</p></span>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container-fluid d-flex">
+                <div class="row">
+                    <div class="col-6">
+                        <form action="https://forms.un-static.com/forms/74dcf62191a456d97eca511f97e8c38653ce2ec1" method="POST" role="form" aria-roledescription="contact form">
+                            <label for="first-name">What Shall I Call You?</label>
+                            <br>
+                            <input type="text" name="first-name" required autocomplete="given-name" placeholder="First Name">
+                            <br>
+                            <br>
+                            <label for="last-name">The Family Name You're Proud Of</label>
+                            <br>
+                            <input type="text" name="last-name" required autocomplete="family-name" placeholder="Last Name">
+                            <br>
+                            <br>
+                            <label for="company">The Place That Pays You Money (Maybe)</label>
+                            <br>
+                            <input type="text" name="company" autocomplete="organization" placeholder="Company">
+                            <br>
+                            <br>
+                            <label for="email-address">How to Reach You Electronically</label>
+                            <br>
+                            <input type="email" name="email-address" required autocomplete="email" placeholder="Email Address">
+                            <br>
+                            <br>
+                            <label for="message">Tell Byte Buddy All the Juicy Details</label>
+                            <br>
+                            <textarea name="message" placeholder="Go on, what's your message?"></textarea>
+                            <br>
+                            <br>
+                            <input type="submit" value="Submit" class="btn">
+                        </form>
+                    </div>
+                    <div class="col-6">
+                        <img id="bytebuddy" src="images/byte-buddy.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- END CONTACT -->
+    </main>
+    <footer class="purpleBg">
+        
+    </footer>
+    <div class="offcanvas offcanvas-start" id="sidebar">
+        <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="sidebar-label">Source Selector</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#header"><img src="images/play-button.png" alt="play-button icon" class="nav-icon">The Beginning</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                  <a class="nav-link" href="#aboutme"><img src="images/information-button.png" alt="information icon" class="nav-icon">A Peek into My World</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                  <a class="nav-link" href="#current-projects"><img src="images/coding-icon.png" alt="" class="nav-icon">What I'm Working On</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                  <a class="nav-link" href="#archive"><img src="images/safe-icon.png" alt="safe" class="nav-icon">The Time Capsule</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link"><img src="images/blog-icon.png" alt="pen on paper" class="nav-icon">Byte-Sized Insights</a>
+                </li>
+                <br>
+                <br>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link"><img src="images/byte-buddy.png" alt="robot head" class="nav-icon">Byte Buddy </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
 </html>

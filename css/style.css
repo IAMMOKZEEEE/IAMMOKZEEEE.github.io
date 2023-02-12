@@ -1,0 +1,261 @@
+/* UNIVERSAL STYLES */
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+section { 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+    max-height: fit-content;
+    padding: 50px;
+}
+
+.title {
+    justify-content: center;
+    display: flex;
+}
+
+h1 {
+    color: #EAFE3E;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17.5vw;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Mulish', sans-serif;
+}
+
+h3 {
+    color: #5801D9!important;
+    font-family: 'Mulish', sans-serif!important;
+}
+  
+.purple {
+    color: #5801D9;
+}
+
+label {
+    color: #5801D9;
+    font-family: "Space Mono", monospace;
+}
+
+input, textarea {
+    border-color: #5801D9;
+}
+
+
+
+.purpleBg {
+    background-color: #5801D9;
+}
+
+.white {
+    color: #fff;
+}
+
+p {
+    font-family: 'Space Mono', monospace;
+    color: black;
+}
+
+img {
+    width: 100%;
+}
+
+#menu-img {
+    size: 2px;
+}
+
+#menu-btn {
+    border: white;
+    background-color: #5801D9;
+    width: 4vw;
+    height: 4vw; 
+    justify-self: right;
+    position: fixed;
+    z-index: 10;
+    float: right;
+    border-radius: 100%;
+    top: 0;
+    right: 0;
+}
+
+.nav-link {
+    color: #5801D9;
+    font-family: "Space Mono", monospace;
+}
+
+.nav-icon {
+    width: 2.5vw;
+    margin-right: 10px;
+}
+
+.container-fluid, .container {
+    /*border: solid;*/
+    width: 85vw;
+    flex-direction: column;
+    height: fit-content;
+}
+
+#currentprojects-container {
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+
+#currentprojects-row {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.row {
+    /*border: solid;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.col {
+    /*border: solid;*/
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.card {
+    max-width: fit-content;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@keyframes bob{
+    0% { transform: translateY(0); }
+    50% { transform: translateY(50px); }
+    75% { transform: translateY(75px); }
+    100% { transform: translateY(0); }
+}
+
+.btn {
+    background-color: #5801D9;
+    color: white
+}
+
+/* UNIVERSAL STYLES */
+
+
+/* HOMEPAGE */
+/* HOMEPAGE - HEADER */
+
+header{
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    background-color: #5801D9;
+}
+
+#header-container {
+    flex-wrap: wrap;
+    align-content: center;
+    flex-shrink: initial;
+}
+
+.header-txt {
+    color: #fff;
+    font-size: 4vw;
+}
+  
+/* HOMEPAGE - HEADER - TIMER */
+
+#timer {
+    flex-wrap: nowrap;
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 0;
+}
+
+#timer-box {
+    display: inline-flex;
+}
+
+.timeel {
+    padding-right: 1.5vw;
+}
+
+#timer{
+    display: flex;
+    flex-flow: column;
+}
+
+#down-arrow {
+    position: absolute;
+    width: 3vw;
+    animation-name: bob;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-left: 3vw;
+}
+
+.down-arrow-row {
+    margin-top: 30px;
+    align-items: flex-start;
+    margin: 0;
+    height: 50px;
+}
+
+/* HOMEPAGE - HEADER - TIMER */
+/* HOMEPAGE - HEADER */
+
+/* HOMEPAGE - ABOUT ME */
+
+#aboutme-cont {
+    flex-direction: column;
+}
+
+.row div img {
+    align-self: center;
+}
+
+.grid-img {
+    display: flex;
+    align-self: center;
+}
+
+#homebrew {
+    justify-content: end;
+}
+
+/* HOMEPAGE - ABOUT ME */
+
+/* HOMEPAGE - CURRENT PROJECTS */
+
+#sidebar-nav {
+    width: 160px;
+}
+
+/* HOMEPAGE - CURRENT PROJECTS */
+
+/* HOMEPAGE - ARCHIVE */
+
+/* HOMEPAGE - ARCHIVE */
+
+/* HOMEPAGE - BLOG */
+
+/* HOMEPAGE - BLOG */
+
+/* HOMEPAGE - CONTACT */
+
+#bytebuddy {
+    width: 25vw;
+}
+
+/* HOMEPAGE - CONTACT */

@@ -1,6 +1,7 @@
+//TIMER
+
 window.onload = function() {
-  // Month Day, Year Hour:Minute:Second, id-of-element-container
-  countUpFromTime("Mar 11, 2022 12:00:00", 'timer'); // ****** Change this line!
+  countUpFromTime("Mar 11, 2022 12:00:00", 'timer');
 };
 function countUpFromTime(countFrom, id) {
   countFrom = new Date(countFrom).getTime();
@@ -25,3 +26,15 @@ function countUpFromTime(countFrom, id) {
   clearTimeout(countUpFromTime.interval);
   countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
 }
+
+//RSS FEED
+
+$(document).ready(function() {
+  $('#feed-container').FeedEk({
+    FeedUrl: './blog/_site/feed.xml',
+    MaxCount: 10,
+    ShowDesc: true,
+    ShowPubDate: true
+  });
+});
+
