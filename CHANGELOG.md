@@ -7,18 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 1.0.0 (UNRELEASED)
 ### Modified
-. Complete overhaul of styling
++ New style.css
 
 ### Added
-. Re-introduced Bootstrap
-. Added jekyll blog
-. Added header to index.html
-. Added A Peek Into My Life to index.html
-. Added What I'm Working On to index.html
-. Added The Time Capsule to index.html
-. Added Byte Sized Insights to index.html
-. Added Byt Buddy to index.html
-. Added Bootstrap sidebar
-. Added Navigation to each section of index.html to sidebar
-. Added Bootstrap sidebar button
-. Added Bootstrap cards for What I'm Working On section
++ Re-introduced Bootstrap
++ Added jekyll blog
++ Added header to index.html
++ Added A Peek Into My Life to index.html
++ Added What I'm Working On to index.html
++ Added The Time Capsule to index.html
++ Added Byte Sized Insights to index.html
++ Added Byte Buddy to index.html
++ Added Bootstrap sidebar
++ Added Navigation to each section of index.html to sidebar
++ Added Bootstrap sidebar button
++ Added Bootstrap cards for What I'm Working On section
