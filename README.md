@@ -32,7 +32,8 @@ All pages have a home button in the top-right corner with a purple background an
 
 ## Features
 + JavaScript Count-Up clock for how long I've been coding.
-+ Dropdown menu to access 5 listed active projects pages.
++ Bootstrap Sidebar Menu
++ Contact Form
 + Archive of previous projects and, where possible, ability to use them on-site.
 + Showcase current projects and, where possible, ability to use them on-site.
 
