@@ -37,7 +37,7 @@ All pages have a home button in the top-right corner with a purple background an
 + Showcase current projects and, where possible, ability to use them on-site.
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 The MIT License is a permissive open source license that allows for free use, modification, and distribution of the code. This means you can use this project for any purpose, including commercial applications, and make any modifications you like. However, the license does come with some limitations and responsibilities, so please read the license terms carefully before using this code.
 
