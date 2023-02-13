@@ -1,4 +1,8 @@
-#Page Directories
+#Directories
 unpublished_pages/
 ignored_pages/
 ignored_script/
+.vscode/
+
+#Files
+.DS_Store
