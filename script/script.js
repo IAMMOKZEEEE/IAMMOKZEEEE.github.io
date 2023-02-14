@@ -28,6 +28,7 @@ THE SOFTWARE.
 window.onload = function() {
   countUpFromTime("Mar 11, 2022 12:00:00", 'timer');
 };
+
 function countUpFromTime(countFrom, id) {
   countFrom = new Date(countFrom).getTime();
   var now = new Date(),
@@ -63,3 +64,81 @@ $(document).ready(function() {
   });
 });
 
+// Search function
+
+function search() {
+  // Declare variables
+  var input, filter, li, i, txtValue, projects, row, col, a, h3;
+  input = document.getElementById('searchBar');
+  filter = input.value.toUpperCase();
+  projects = document.getElementsByClassName("archive-project");
+
+  // Loop through all list items, and hide those that don't match the search query
+  for (i = 0; i < projects.length; i++) {
+    row = projects[i].getElementsByClassName("row")[0];
+    col = row.getElementsByClassName("li-title")[0];
+    a = col.getElementsByTagName("a")[0];
+    h3 = a.getElementsByTagName("h3")[0];
+
+    txtValue = h3.textContent || h3.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      projects[i].style.display = "";
+    } else {
+      projects[i].style.display = "none";
+    }
+  }
+}
+
+
+//List Sorting
+
+function sortListDir() {
+  var list, i, switching, b, shouldSwitch, dir, switchcount = 0;
+  list = document.getElementById("id01");
+  switching = true;
+  // Set the sorting direction to ascending:
+  dir = "asc";
+  // Make a loop that will continue until no switching has been done:
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list-items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Check if the next item should switch place with the current item,
+      based on the sorting direction (asc or desc): */
+      if (dir == "asc") {
+        if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+          /* If next item is alphabetically lower than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch = true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (b[i].innerHTML.toLowerCase() < b[i + 1].innerHTML.toLowerCase()) {
+          /* If next item is alphabetically higher than current item,
+          mark as a switch and break the loop: */
+          shouldSwitch= true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+      // Each time a switch is done, increase switchcount by 1:
+      switchcount ++;
+    } else {
+      /* If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again. */
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}

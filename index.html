@@ -91,11 +91,14 @@ THE SOFTWARE.
     </header>
 
     <main>
+        
         <!-- ABOUT ME -->
         <section id="aboutme">
             <div class="container-fluid d-flex" id="aboutme-cont">
-                <span class="title"><h2 class="purple">A Peek into My World</h2></span>
+                <span class="subtitle"><h2 class="purple">A Peek into My World</h2></span>
+                
                 <div class="row">
+                    
                     <div class="col-6">
                         <p class="aboutme-txt1">Hi! I'm Charlie, a developer working with <i>Python</i>, <i>HTML5</i>, <i>CSS</i> and <i>JavaScript</i>. While my experience with these languages has been brief, my learning curve has been extensive.</p>
                         <br>
@@ -105,14 +108,19 @@ THE SOFTWARE.
                         <br>
                         <p>I am excited to continue honing my skills and using my knowledge to make a positive impact in the world of technology. If you're looking for a driven and dedicated developer, look no further! Let's work together to bring your next project to life.</p>
                     </div>
+                    
                     <div class="col-6 grid-img" id="me">
                         <img src="images/me.jpeg" id="aboutme-img1">
                     </div>
+                
                 </div>
+                
                 <div class="row">
+                    
                     <div class="col-6 grid-img" id="homebrew">
                         <img src="images/home-brew.jpeg" id="aboutme-img2">
                     </div>
+                    
                     <div class="col-6">
                         <p>When I'm not coding, you can find me pursuing my various hobbies and interests. I am an avid home brewer and enjoy experimenting with different flavors and ingredients to create unique and delicious beers.</p>
                         <br>
@@ -124,7 +132,9 @@ THE SOFTWARE.
                         <br>
                         <p>Whether I'm brewing beer, playing video games, shooting pool, or making music, I always find a way to bring my passions into my everyday life."</p>
                     </div>
+                
                 </div>
+            
             </div>
         </section>
         <!-- END ABOUT ME-->
@@ -132,14 +142,17 @@ THE SOFTWARE.
         <!-- CURRENT PROJECTS -->
         <section id="current-projects" class="purpleBg">
             <div class="container-fluid d-flex" id="currentprojects-container">
-                <span class="title"><h2 class="white">What I'm Working On</h2></span>
-                <span class="title"><p class="white">My ongoing coding projects and a glimpse into my current creative endeavors.</p></span>
+                <span class="subtitle"><h2 class="white">What I'm Working On</h2></span>
+                <span class="subtitle"><p class="white">My ongoing coding projects and a glimpse into my current creative endeavors.</p></span>
+                
+                <!-- PROJECT CARDS -->
                 <span>
-                    <!-- PROJECT 1 -->
                     <div class="row" id="currentprojects-row">
+                        
+                        <!-- PROJECT 1 -->
                             <div class="col-2">
                                 <div class="card">
-                                    <img class="card-img-top" src="images/findArtists.jpeg">
+                                    <img class="card-img-top" src="images/findArtists.jpeg" alt="black and white photo showing musicians holding instruments in the air">
                                     <div class="card-body">
                                         <h3 class="card-title">Find Artists</h3>
                                         <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
@@ -178,7 +191,7 @@ THE SOFTWARE.
                         <!-- PROJECT 4-->
                         <div class="col-2">
                             <div class="card">
-                                <img class="card-img-top" src="images/findArtists.jpeg">
+                                <img class="card-img-top" src="images/findArtists.jpeg" alt="">
                                 <div class="card-body">
                                     <h3 class="card-title">Find Artists</h3>
                                     <p class="card-text">An app to pull and export information on musical artists, from wikidata, using the PyWikibot.</p>
@@ -200,8 +213,11 @@ THE SOFTWARE.
                             </div>
                         </div>
                         <!-- END PROJECT 5-->
+                    
                     </div>
                 </span>
+                <!-- END PROJECT CARDS-->
+
             </div>
         </section>
         <!--END CURRENT PROJECTS-->
@@ -209,16 +225,266 @@ THE SOFTWARE.
         <!-- ARCHIVE -->
         <section id="archive">
             <div class="container-fluid d-flex">
-                <span class="title"><h2 class="purple">The Time Capsule</h2></span>
-                <span class="title"><p class="purple">A collection of my past <i>coding projects</i> offering an insight into my coding journey, showcasing the progression of my skills as a <i>developer</i>.</p></span>
+                <span class="subtitle"><h2 class="purple">The Time Capsule</h2></span>
+                <span class="subtitle"><p class="purple">A collection of my past <i>coding projects</i> offering an insight into my coding journey, showcasing the progression of my skills as a <i>developer</i>.</p></span>
+                    
+                    
+                <!-- ARCHIVE LIST CONTAINER id="capsule" -->
+                <div class="list-container">
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="text" id="searchBar" onkeyup="search()" placeholder="Search for projects..">
+                        </div>
+                    </div>
+                    <div class="row" id="list-container-row">
+                        <div class="col-12">
+                            <ul id="archive">
+                                
+                                <!-- ARCHIVE ITEM -->
+                                <li>
+                                    <div class="li-container container archive-project">
+                                        <div class="row">
+
+                                            <!-- ARCHIVE ITEM IMAGE -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <a href="#">
+                                                        <img src="images/code.jpeg">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM IMAGE-->
+                                           
+                                            <!-- ARCHIVE ITEM DESCRIPTION-->
+                                            <div class="col-8">
+                                                <span class="li-title">
+                                                    <a href="#">
+                                                        <h3 class="li-title">Message Generator</h3>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <p class="li-description"></p>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM DESCRIPTION-->
+
+                                            <!-- ARCHIVE ITEM TAGS -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <ul>
+                                                        <span><h4>Tags</h4></span>
+                                                        <li class="tag"><p>Python</p></li>
+                                                        <li class="tag">JavaScript</li>
+                                                        <li class="tag">CSS</li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM TAGS -->
+                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ARCHIVE ITEM END -->
+
+                                <!-- ARCHIVE ITEM -->
+                                <li>
+                                    <div class="li-container container archive-project">
+                                        <div class="row">
+
+                                            <!-- ARCHIVE ITEM IMAGE -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <a href="#">
+                                                        <img src="images/code.jpeg">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM IMAGE-->
+                                           
+                                            <!-- ARCHIVE ITEM DESCRIPTION-->
+                                            <div class="col-8">
+                                                <span class="li-title">
+                                                    <a href="#">
+                                                        <h3 class="li-title">Message Generator</h3>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <p class="li-description"></p>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM DESCRIPTION-->
+
+                                            <!-- ARCHIVE ITEM TAGS -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <ul>
+                                                        <span><h4>Tags</h4></span>
+                                                        <li class="tag"><p>Python</p></li>
+                                                        <li class="tag">JavaScript</li>
+                                                        <li class="tag">CSS</li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM TAGS -->
+                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ARCHIVE ITEM END -->
+
+                                <!-- ARCHIVE ITEM -->
+                                <li>
+                                    <div class="li-container container archive-project">
+                                        <div class="row">
+
+                                            <!-- ARCHIVE ITEM IMAGE -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <a href="#">
+                                                        <img src="images/code.jpeg">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM IMAGE-->
+                                           
+                                            <!-- ARCHIVE ITEM DESCRIPTION-->
+                                            <div class="col-8">
+                                                <span class="li-title">
+                                                    <a href="#">
+                                                        <h3 class="li-title">Message Generator</h3>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <p class="li-description"></p>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM DESCRIPTION-->
+
+                                            <!-- ARCHIVE ITEM TAGS -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <ul>
+                                                        <span><h4>Tags</h4></span>
+                                                        <li class="tag"><p>Python</p></li>
+                                                        <li class="tag">JavaScript</li>
+                                                        <li class="tag">CSS</li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM TAGS -->
+                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ARCHIVE ITEM END -->
+
+                                <!-- ARCHIVE ITEM -->
+                                <li>
+                                    <div class="li-container container archive-project">
+                                        <div class="row">
+
+                                            <!-- ARCHIVE ITEM IMAGE -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <a href="#">
+                                                        <img src="images/code.jpeg">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM IMAGE-->
+                                           
+                                            <!-- ARCHIVE ITEM DESCRIPTION-->
+                                            <div class="col-8">
+                                                <span class="li-title">
+                                                    <a href="#">
+                                                        <h3 class="li-title">Message Generator</h3>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <p class="li-description"></p>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM DESCRIPTION-->
+
+                                            <!-- ARCHIVE ITEM TAGS -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <ul>
+                                                        <span><h4>Tags</h4></span>
+                                                        <li class="tag"><p>Python</p></li>
+                                                        <li class="tag">JavaScript</li>
+                                                        <li class="tag">CSS</li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM TAGS -->
+                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ARCHIVE ITEM END -->
+
+                                <!-- ARCHIVE ITEM -->
+                                <li>
+                                    <div class="li-container container archive-project">
+                                        <div class="row">
+
+                                            <!-- ARCHIVE ITEM IMAGE -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <a href="#">
+                                                        <img src="images/code.jpeg">
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM IMAGE-->
+                                           
+                                            <!-- ARCHIVE ITEM DESCRIPTION-->
+                                            <div class="col-8">
+                                                <span class="li-title">
+                                                    <a href="#">
+                                                        <h3 class="li-title">Message Generator</h3>
+                                                    </a>
+                                                </span>
+                                                <span>
+                                                    <p class="li-description"></p>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM DESCRIPTION-->
+
+                                            <!-- ARCHIVE ITEM TAGS -->
+                                            <div class="col-2">
+                                                <span>
+                                                    <ul>
+                                                        <span><h4>Tags</h4></span>
+                                                        <li class="tag"><p>Python</p></li>
+                                                        <li class="tag">JavaScript</li>
+                                                        <li class="tag">CSS</li>
+                                                    </ul>
+                                                </span>
+                                            </div>
+                                            <!-- END ARCHIVE ITEM TAGS -->
+                                        
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- ARCHIVE ITEM END -->
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- END ARCHIVE LIST CONTAINER -->
+            
             </div>
         </section>
         <!-- END ARCHIVE -->
         
         <!-- BLOG -->
         <section id="blog" class="purpleBg">
-            <span class="title"><h2 class="white">Byte-Sized Insights</h2></span>
-            <span class="title"><p class="white">Join me on a fun and exciting coding journey as I showcase my latest projects and discoveries, giving you an inside look at my personal coding world as a one-person coding machine!</p></span>
+            <span class="subtitle"><h2 class="white">Byte-Sized Insights</h2></span>
+            <span class="subtitle"><p class="white">Join me on a fun and exciting coding journey as I showcase my latest projects and discoveries, giving you an inside look at my personal coding world as a one-person coding machine!</p></span>
             <div class="container-fluid d-flex">
                 <div id="divFeed">
 
@@ -229,8 +495,8 @@ THE SOFTWARE.
 
         <!-- CONTACT -->
         <section id="contact">
-            <span class="title"><h2 class="purple">Byte Buddy</h2></span>
-            <span class="title"><p class="purple">Whether you have a question or just want to chat, Byte Buddy is here to help! Drop me a line and let's connect.</p></span>
+            <span class="subtitle"><h2 class="purple">Byte Buddy</h2></span>
+            <span class="subtitle"><p class="purple">Whether you have a question or just want to chat, Byte Buddy is here to help! Drop me a line and let's connect.</p></span>
             <br>
             <br>
             <br>
