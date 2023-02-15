@@ -201,12 +201,12 @@ img {
 
 li {
     list-style: none;
-    border: solid purple 0.5px;
-    margin-bottom: 3px;
+    /*border: solid purple 0.5px;*/
+    margin-bottom: 10px;
     display: inline-flex;
     flex-wrap: wrap;
     max-width: 100%;
-    font-style: "Space Mono", monospace;
+    box-shadow: 2px 2px 4px #BEBEBE;
     padding: 2px;
 }
 
@@ -318,10 +318,12 @@ header{
 
 .tag {
     border: none;
-    background-color: grey;
-    border-bottom-right-radius: 100%;
-    border-top-right-radius: 100%;
+    background-color: #EBECF0;
     width:fit-content;
+    box-shadow: 2px 2px 4px #BEBEBE;
+    max-height: fit-content;
+    max-width: fit-content;
+
 
 }
 
